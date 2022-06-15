@@ -1,6 +1,6 @@
 import React from 'react'
 import ScrollIntoView from "react-scroll-into-view"
-import  {FaChevronDown} from "react-icons"
+import  {FaChevronDown} from "react-icons/fa"
 
 export const About = () => {
   return (
@@ -9,10 +9,16 @@ export const About = () => {
               Hey!👋
           </p>
           <p className='text-base   sm:text-xl  text-center text-gray-600 leading-relaxed mt-4'>
-                I'm a passionate web and react developer. I love watching anime and playing games,Backlash react. I also love freelancing and workung on open source project.
+                I'm a passionate React developer. A Student Sophomore and highly curious to explore new programming languages and dive deeper into the coding world. Also hold interest in Competitive programming and Open Source.I'm a Front-end Enthusiast.Feel free to reach out to me!
           </p>
+          <ScrollIntoView  selector='#tech'>
+            <div className='mx-auto p-20 '>
+              <FaChevronDown className = 'animate-bounce mx-auto text-3xl text-blue-500'/>
+            </div>
+          </ScrollIntoView>
           
     </div>
+  
      
   )
 }
